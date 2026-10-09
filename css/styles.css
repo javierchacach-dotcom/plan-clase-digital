@@ -1,0 +1,71 @@
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background-color: #f1f5f9;
+}
+
+/* Barra de navegación */
+.navbar {
+background-color: #1e3a8a;
+color: white;
+padding: 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.navbar h1 {
+margin: 0;
+}
+
+.navbar ul {
+display: flex;
+gap: 20px;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.navbar a {
+color: white;
+text-decoration: none;
+font-weight: bold;
+}
+
+/* Interactividad de los enlaces */
+.navbar a:hover {
+text-decoration: underline;
+}
+
+/* Contenedor de las tarjetas */
+.contenedor-modulos {
+display: flex;
+gap: 20px;
+padding: 30px;
+flex-wrap: wrap;
+}
+
+/* Tarjetas pedagógicas */
+.tarjeta-modulo {
+background-color: white;
+border: 2px solid #1e3a8a;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+padding: 20px;
+margin: 5px;
+flex: 1;
+min-width: 220px;
+box-sizing: border-box;
+}
+
+/* Efecto al pasar el cursor sobre las tarjetas */
+.tarjeta-modulo:hover {
+transform: translateY(-3px);
+}
+
+/* Pie de página */
+footer {
+text-align: center;
+padding: 20px;
+margin-top: 20px;
+}
