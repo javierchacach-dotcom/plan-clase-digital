@@ -1,72 +1,174 @@
+
+/* Configuración general */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-margin: 0;
-font-family: Arial, sans-serif;
-background-color: #f1f5f9;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #1e293b;
+    background-color: #f1f5f9;
 }
 
 /* Barra de navegación */
+.encabezado {
+    background-color: #1e3a8a;
+    color: white;
+}
+
 .navbar {
-background-color: #1e3a8a;
-color: white;
-padding: 20px;
-display: flex;
-justify-content: space-between;
-align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 18px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
 }
 
 .navbar h1 {
-margin: 0;
+    margin: 0;
+    font-size: 1.5rem;
 }
 
 .navbar ul {
-display: flex;
-gap: 20px;
-list-style: none;
-margin: 0;
-padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .navbar a {
-color: white;
-text-decoration: none;
-font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-/* Interactividad de los enlaces */
 .navbar a:hover {
-text-decoration: underline;
+    text-decoration: underline;
 }
 
-/* Contenedor de las tarjetas */
+/* Presentación */
+.presentacion {
+    padding: 60px 24px;
+    text-align: center;
+    background-color: #dbeafe;
+}
+
+.presentacion h2 {
+    margin-top: 0;
+    color: #1e3a8a;
+    font-size: 2rem;
+}
+
+.presentacion p {
+    max-width: 700px;
+    margin: 0 auto 24px;
+}
+
+.boton {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 8px;
+    background-color: #1e3a8a;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.boton:hover {
+    background-color: #1d4ed8;
+}
+
+/* Secciones y tarjetas con Flexbox */
+.seccion {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 36px 24px;
+}
+
+.seccion h2 {
+    color: #1e3a8a;
+    text-align: center;
+    margin-top: 0;
+}
+
 .contenedor-modulos {
-display: flex;
-gap: 20px;
-padding: 30px;
-flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 24px;
 }
 
-/* Tarjetas pedagógicas */
 .tarjeta-modulo {
-background-color: white;
-border: 2px solid #1e3a8a;
-border-radius: 10px;
-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.18);
-transition: transform 0.3s ease, box-shadow 0.3s ease;
-padding: 20px;
-margin: 5px;
-flex: 1;
-min-width: 220px;
-box-sizing: border-box;
+    flex: 1 1 250px;
+    padding: 24px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.18);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Efecto al pasar el cursor sobre las tarjetas */
 .tarjeta-modulo:hover {
-transform: translateY(-3px);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.2);
+}
+
+.tarjeta-modulo h3 {
+    margin-top: 0;
+    color: #1e3a8a;
+}
+
+/* Evaluación */
+.evaluacion {
+    margin-bottom: 30px;
+}
+
+.criterio {
+    display: block;
+    margin: 12px auto;
+    max-width: 600px;
+    padding: 14px;
+    background-color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.criterio input {
+    margin-right: 10px;
+    accent-color: #1e3a8a;
 }
 
 /* Pie de página */
-footer {
-text-align: center;
-padding: 20px;
-margin-top: 20px;
+.pie-pagina {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: #1e3a8a;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar ul {
+        justify-content: center;
+    }
+
+    .presentacion h2 {
+        font-size: 1.6rem;
+    }
 }

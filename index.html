@@ -1,48 +1,105 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Web Semana 2</title>
+    <meta name="description" content="Plan de clase digital interactivo para estudiantes de nivel medio.">
+    <title>Plan de Clase Digital</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+    <header class="encabezado">
+        <nav class="navbar" aria-label="Navegación principal">
+            <h1>Plan de Clase Digital</h1>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#objetivos">Objetivos</a></li>
+                <li><a href="#actividades">Actividades</a></li>
+                <li><a href="#evaluacion">Evaluación</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <section id="inicio" class="presentacion">
+            <h2>Aprendamos tecnología</h2>
+            <p>
+                Bienvenidos al plan de clase digital. En este espacio
+                conoceremos los objetivos, las actividades y la evaluación
+                de nuestra clase.
+            </p>
+            <a class="boton" href="#actividades">Comenzar la clase</a>
+        </section>
 
-<nav class="navbar">
-    <h1>Proyecto Web Semana 2</h1>
+        <section id="objetivos" class="seccion">
+            <h2>Objetivos de aprendizaje</h2>
+            <div class="contenedor-modulos">
+                <article class="tarjeta-modulo">
+                    <h3>Conocimiento</h3>
+                    <p>Identificar los conceptos básicos relacionados con el tema de la clase.</p>
+                </article>
 
-    <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#modulos">Módulos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-    </ul>
-</nav>
+                <article class="tarjeta-modulo">
+                    <h3>Habilidades</h3>
+                    <p>Aplicar los conocimientos mediante actividades prácticas y colaborativas.</p>
+                </article>
 
-<main id="inicio" class="contenedor-modulos">
+                <article class="tarjeta-modulo">
+                    <h3>Actitudes</h3>
+                    <p>Promover la responsabilidad, la participación y el respeto en el aula.</p>
+                </article>
+            </div>
+        </section>
 
-    <section id="modulos" class="tarjeta-modulo">
-        <h2>HTML</h2>
-        <p>Aprenderé a crear la estructura y contenido de una página web.</p>
-    </section>
+        <section id="actividades" class="seccion">
+            <h2>Actividades de aprendizaje</h2>
 
-    <section class="tarjeta-modulo">
-        <h2>CSS</h2>
-        <p>Aprenderé a diseñar páginas web utilizando hojas de estilos.</p>
-    </section>
+            <div class="contenedor-modulos">
+                <article class="tarjeta-modulo">
+                    <h3>1. Inicio</h3>
+                    <p>El docente presenta el tema y realiza preguntas para conocer los saberes previos.</p>
+                    <p><strong>Tiempo:</strong> 5 minutos.</p>
+                </article>
 
-    <section class="tarjeta-modulo">
-        <h2>Flexbox</h2>
-        <p>Aprenderé a organizar los elementos de una página de manera flexible.</p>
-    </section>
+                <article class="tarjeta-modulo">
+                    <h3>2. Desarrollo</h3>
+                    <p>Los estudiantes estudian el contenido y realizan una actividad práctica guiada.</p>
+                    <p><strong>Tiempo:</strong> 25 minutos.</p>
+                </article>
 
-</main>
+                <article class="tarjeta-modulo">
+                    <h3>3. Cierre</h3>
+                    <p>Los estudiantes comparten lo aprendido y responden preguntas de reflexión.</p>
+                    <p><strong>Tiempo:</strong> 10 minutos.</p>
+                </article>
+            </div>
+        </section>
 
-<footer id="contacto">
-    <p>Proyecto Web Semana 2</p>
-</footer>  
+        <section id="evaluacion" class="seccion evaluacion">
+            <h2>Evaluación del aprendizaje</h2>
+            <p>Marca los criterios que has logrado durante la clase:</p>
 
+            <label class="criterio">
+                <input type="checkbox">
+                Comprendí el tema explicado.
+            </label>
+
+            <label class="criterio">
+                <input type="checkbox">
+                Participé en las actividades.
+            </label>
+
+            <label class="criterio">
+                <input type="checkbox">
+                Puedo explicar lo que aprendí.
+            </label>
+        </section>
+    </main>
+
+    <footer id="contacto" class="pie-pagina">
+        <p>Plan de Clase Digital | Recurso educativo para nivel medio</p>
+    </footer>
 </body>
 </html>
